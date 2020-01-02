@@ -1,0 +1,61 @@
+{
+  "name": "esen-wxapp-miaoda",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npm run dev:h5",
+    "build": "npm run build:h5",
+    "prod:change": "cross-env NODE_ENV=production node build/build.js",
+    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
+    "build:mp-alipay": "cross-env NODE_ENV=production UNI_PLATFORM=mp-alipay vue-cli-service uni-build",
+    "build:mp-baidu": "cross-env NODE_ENV=production UNI_PLATFORM=mp-baidu vue-cli-service uni-build",
+    "build:mp-toutiao": "cross-env NODE_ENV=production UNI_PLATFORM=mp-toutiao vue-cli-service uni-build",
+    "build:mp-weixin": "npm run prod:change  && cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "build:mp-weixin-bash": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
+    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve",
+    "dev:mp-alipay": "cross-env NODE_ENV=development UNI_PLATFORM=mp-alipay vue-cli-service uni-build --watch",
+    "dev:mp-baidu": "cross-env NODE_ENV=development UNI_PLATFORM=mp-baidu vue-cli-service uni-build --watch",
+    "dev:mp-toutiao": "cross-env NODE_ENV=development UNI_PLATFORM=mp-toutiao vue-cli-service uni-build --watch",
+    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
+    "copy": "node build/copyExt.js",
+    "copy:dist": "node build/copyConfig.js",
+    "copy:color": "node build/copyColor.js",
+    "copy:modules": "node build/copyModules.js",
+    "upload": "node upload/build.js"
+  },
+  "dependencies": {
+    "@dcloudio/uni-h5": "*",
+    "@dcloudio/uni-mp-alipay": "*",
+    "@dcloudio/uni-mp-baidu": "*",
+    "@dcloudio/uni-mp-toutiao": "*",
+    "@dcloudio/uni-mp-weixin": "*",
+    "axios": "^0.18.0",
+    "esen-vcard": "0.0.37",
+    "flyio": "^0.6.2",
+    "js-base64": "^2.5.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "moment": "^2.24.0",
+    "pinyin": "^2.8.3",
+    "regenerator-runtime": "^0.12.1",
+    "vue": "^2.6.6",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-cli-shared": "*",
+    "@dcloudio/vue-cli-plugin-uni": "0.9.445",
+    "@dcloudio/webpack-uni-mp-loader": "*",
+    "@dcloudio/webpack-uni-pages-loader": "*",
+    "@vue/cli-plugin-babel": "3.3.0",
+    "@vue/cli-service": "^3.4.0",
+    "babel-plugin-import": "^1.11.0",
+    "cross-env": "^6.0.3",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.4",
+    "ios >= 8"
+  ]
+}

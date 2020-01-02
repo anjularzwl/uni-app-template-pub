@@ -1,0 +1,38 @@
+{
+  "extEnable": true,
+  "extAppid": "wx718d7fa7339d9df7",
+  "directCommit": true,
+  "ext": {
+    "appId": "wx718d7fa7339d9df7",
+    "apiHost": "https://wxapp.esenyun.com/",
+    "appLogo": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM5LzUwucjxFMIEc9cIxm3lOdhgNAI0rFtMKpibs3y1hE2w/0",
+    "appName": "仅一联智小助手",
+    "officialName": "仅一客服",
+    "description": "仅一联智小助手，是您掌上的问题指导专家。用心为您提供设备日常故障维护解决方案查询、线上技术支持、备件咨询等，让服务触手可及！",
+    "primaryColor": "#F29100",
+    "primaryColorSup": "#ffc125",
+    "backgroundColorTag": "#FBF7EC",
+    "transFormColor": "#F29100",
+    "editDownIcon": "https://img.esenyun.com/images/20181115/ed1af6ff714346378acf27b651c7f90d.png",
+    "detailTitleBg": "https://img.esenyun.com/images/20181227/a3bf744115e04e3e972ae3c4853ed63c.png",
+    "detailCustomerIcon": "https://img.esenyun.com/images/20181114/8addb1f15a6b4a5b990fa5d012e80be5.png",
+    "detailHomeIcon": "https://img.esenyun.com/images/20181114/edde14f1a1214246815349c14c3cd433.png",
+    "indexMessageIcon": "https://img.esenyun.com/images/20181130/cc697ce4848341b8a6def0d59e1a61b3.png",
+    "indexCreateIcon": "https://img.esenyun.com/images/20190107/0efaba0bdeaf46b3b02dcf47dd530cea.png",
+    "guideIcon": "https://img.esenyun.com/images/20181205/6398313cfa0e4c02884e4143fb9edb8e.png",
+    "confirmIcon": "https://img.esenyun.com/images/20190102/6eaa2342d68c4ff48b931a01e897bef0.png",
+    "cardIcon": "https://img.esenyun.com/images/20190107/ff866a00cf55462b8ffe57edd48926d8.png",
+    "mycardIcon": "https://img.esenyun.com/images/20190115/f0887cad9e034a99bb1c63709903fde1.png",
+    "officialIcon": "https://img.esenyun.com/images/20190215/bb83d4555f3342ac8548900b348d90c0.png"
+  },
+  "extPages": {
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f2f2f2",
+    "enablePullDownRefresh": false
+  }
+}

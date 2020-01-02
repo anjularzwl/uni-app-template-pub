@@ -1,0 +1,374 @@
+@import './variables';
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-width: 0 10upx 10upx;
+  border-style: solid;
+  margin-left: 40upx;
+  border-color: transparent transparent #FDFCEC;
+}
+.common-label {
+  display: flex;
+	flex-wrap: wrap;
+  .tag {
+    border: 1px solid #CCCCCC;
+    border-radius: 50upx;
+    padding: 8upx 14upx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333333;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .sure_label {
+    background: #E5EAEF;
+    border-color: #E5EAEF;
+    color: @primary-color;
+  }
+}
+.copy-btn {
+  height: 90upx;
+  line-height: 90upx;
+  padding-left: 20upx;
+  font-size: 14px;
+  border-bottom: 1upx solid #eee;
+  text-align: center;
+}
+.preventTouchMove {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 0;
+}
+.common-empty {
+  width: 100%;
+  position: fixed;
+  // top: 35%;
+  left: 0;
+  text-align: center;
+  padding-top: 35%;
+  background: #FFFFFF;
+  height: 100%;
+  image{
+    width: 440upx;
+    height: 344upx;
+  }
+  view{
+    font-size: 16px;
+    color: #939DA4;
+    margin-top: 20px;
+  }
+}
+.button-hover {
+  opacity: 0.8;
+}
+.disabled-btn {
+  background: fade(@primary-color, 40%) !important;
+}
+// ipx 底部padding
+.ipx {
+  padding-bottom: 30px !important;
+}
+// flex 垂直居中
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// flex 垂直居中 左右分布
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+// 小的按钮样式
+.esen-small-btn {
+  height: 30px;
+  line-height: 30px;
+  border-radius: 6rpx;
+  font-size: 14px;
+}
+// 小的按钮有背景
+.esen-small-btn-primary {
+  &:extend(.esen-small-btn);
+  background: @primary-color;
+  color: #fff;
+}
+// 小的按钮没有背景
+.esen-small-btn-default {
+  &:extend(.esen-small-btn);
+  background: #fff;
+  color: @primary-color;
+  border: 1px solid @primary-color;
+}
+.text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+// 大的按钮
+.esen-big-btn-primary {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  // box-shadow: 0rpx 3px 12px 0px @primary-color-sup-1;
+  // background: linear-gradient(to right, @tranform-color, @primary-color-sup-1);
+  background: @primary-color;
+  color: @text-color-font;
+  font-size: 30rpx;
+}
+// 重置按钮样式（用于open-type)
+.restBtn {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: initial;
+}
+// 底部全铺按钮
+.esen_all_btn {
+  width: 100%;
+  background: @primary-color;
+  color: #fff;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+
+.box_btn {
+  margin-top: 96upx;
+  background-color: @primary-color;
+  color: #fff;
+}
+.delete_btn {
+  margin-top: 32upx !important;
+  background: #FFFFFF;
+  color: #797979;
+}
+.box_btns {
+  margin-top: 64upx !important;
+}
+.box_btn_small {
+  background-color: @primary-color;
+  width: 130upx;
+  height: 64upx;
+  line-height: 64upx;
+  color: #fff;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+// 禁止点击按钮样式
+.btn_disabled{
+  color: #fff !important;
+  opacity: 0.24 !important;
+  background-color: @primary-color !important;
+}
+
+// 状态按钮
+.status_btn {
+  background: #ffffff !important;
+  border: 1rpx solid #D9D9D9;
+  border-radius: 64upx;
+  padding: 0upx 42upx;
+  height: 64upx;
+  line-height: 64upx;
+  font-size: 13px;
+  color: #333333;
+}
+.status_color_btn {
+  border: 1rpx solid @primary-color;
+  color: @primary-color;
+}
+.star_box {
+  image {
+    width: 40upx;
+    height: 40upx;
+    margin-right: 12upx;
+  }
+}
+// 红点
+.red_spot, .badge {
+  display: inline-block;
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #EA0606;
+  margin-left: 8rpx;
+}
+.badge {
+  position: absolute;
+  top: -4upx;
+  right: -4upx;
+}
+.mark_box {
+  position: relative;
+}
+// mark --color
+.mark_color {
+  width: 168upx;
+  height: 64upx;
+  line-height: 64upx;
+  text-align: center;
+  border-radius: 6upx;
+  font-weight: 500;
+}
+.mark_coloe_one {
+  background: #E8F4FF;
+  color: @empha-color;
+}
+.mark_coloe_two {
+  background: #EEF9E8;
+  color: @success-color;
+}
+.mark_coloe_three {
+  background: #FFF7E7;
+  color: @warning-color;
+}
+.mark_coloe_four {
+  background: #F2F2F2;
+  color: @file-color;
+}
+.complain_time {
+  font-size: 12px;
+  color: rgba(166, 166, 166, 0.98);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .agent_box{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    image{
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    text{
+      font-size: 11px;
+      color: #939DA4;
+    }
+  }
+}
+// 提醒
+.handle_right {
+  background: #ffffff;
+  position: relative;
+  width: 136upx;
+  height: 64upx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border: 1px solid #D9D9D9;
+  color: #333333;
+  border-radius: 64upx;
+  image {
+    width: 22upx;
+    height: 24upx;
+    margin-right: 10upx;
+  }
+  .add_one {
+    z-index: 999;
+    position: absolute;
+    left: 34upx;
+    top: -50upx;
+    color: #333333;
+    opacity: 0;
+  }
+  .add {
+    animation: mymove 1s linear;
+  }
+  @keyframes mymove {
+    0%   {opacity: 0.2;transform: translateY(-1px);}
+    25%  {opacity: 0.5;transform: translateY(-3px);}
+    50%  {opacity: 1;transform: translateY(-5px);}
+    60%  {opacity: 1;transform: translateY(-5px);}
+    75%  {opacity: 0.5;transform: translateY(-6px);}
+    100% {opacity: 0;transform: translateY(-6px);}
+  }
+}
+
+// 代发标签
+.dai_tag {
+  border: 1px solid #d9d9d9;
+  background: #EEEEEE;
+  height: 30upx;
+  line-height: 30upx;
+  padding: 0upx 24upx;
+  border-radius: 30upx;
+  margin-left: 16upx;
+  color: #323233;
+  font-size: 8px;
+  margin-top: 4upx;
+}
+// 小程序三个点提示
+.small_popup {
+  z-index: 21;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 48px;
+  background: fade(#323233, 100%) !important;
+  color: #ffffff;
+  padding: 40upx 28px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  .small_popup_content {
+    display: flex;
+    align-items: center;
+    image {
+      width: 64upx;
+      height: 40upx;
+      margin: 0upx 10upx;
+    }
+  }
+  .horn {
+    position: absolute;
+    top: -6px;
+    right: 58px;
+    background: fade(#323233, 100%);
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+  }
+}
+
+// 回首页icon
+.baseIcon(@bottom, @right) {
+  width: 96upx;
+  height: 96upx;
+  position: fixed;
+  right: @right;
+  bottom: @bottom;
+  background: #FFFFFF;
+  border: 0.5px solid #F5F5F5;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .home_icon {
+    width: 40upx;
+    height: 40upx;
+  }
+}

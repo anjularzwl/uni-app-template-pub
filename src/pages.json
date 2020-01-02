@@ -1,0 +1,62 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarBackgroundColor": "#F8F9F9",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"usingComponents": {
+					"van-dialog": "/wxcomponents/vant/dialog/index",
+					"van-tab": "/wxcomponents/vant/tab/index",
+					"van-tabs": "/wxcomponents/vant/tabs/index",
+					"van-cell": "/wxcomponents/vant/cell/index",
+					"van-cell-group": "/wxcomponents/vant/cell-group/index",
+					"van-field": "/wxcomponents/vant/field/index",
+					"van-datetime-picker": "/wxcomponents/vant/datetime-picker/index",
+					"van-picker": "/wxcomponents/vant/picker/index",
+					"van-popup": "/wxcomponents/vant/popup/index",
+					"van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+					"van-checkbox": "/wxcomponents/vant/checkbox/index",
+					"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+					"van-loading": "/wxcomponents/vant/loading/index"
+				}
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pages/card",
+		"pages": [{
+				"path": "index",
+				"style": {
+					"navigationBarTitleText": "名片夹",
+					"enablePullDownRefresh": true,
+					"navigationStyle": "default",
+					"usingComponents": {
+						"van-dialog": "/wxcomponents/vant/dialog/index",
+						"van-tab": "/wxcomponents/vant/tab/index",
+						"van-tabs": "/wxcomponents/vant/tabs/index",
+						"van-cell": "/wxcomponents/vant/cell/index",
+						"van-cell-group": "/wxcomponents/vant/cell-group/index",
+						"van-field": "/wxcomponents/vant/field/index",
+						"van-datetime-picker": "/wxcomponents/vant/datetime-picker/index",
+						"van-picker": "/wxcomponents/vant/picker/index",
+						"van-popup": "/wxcomponents/vant/popup/index",
+						"van-action-sheet": "/wxcomponents/vant/action-sheet/index",
+						"van-checkbox": "/wxcomponents/vant/checkbox/index",
+						"van-checkbox-group": "/wxcomponents/vant/checkbox-group/index",
+						"van-swipe-cell": "/wxcomponents/vant/swipe-cell/index"
+					}
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "NexT+客户反馈",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#f2f2f2"
+	}
+}
