@@ -30,7 +30,7 @@
     "@dcloudio/uni-mp-baidu": "*",
     "@dcloudio/uni-mp-toutiao": "*",
     "@dcloudio/uni-mp-weixin": "*",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "esen-vcard": "0.0.37",
     "flyio": "^0.6.2",
     "js-base64": "^2.5.1",
